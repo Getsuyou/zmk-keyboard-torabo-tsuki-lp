@@ -19,31 +19,21 @@
 
         layer_0 {
             bindings = <
-&none             &none         &none         &none          &none        &none                                 &none      &none  &none      &none     &none      &none
-&kp ESC           &kp Q         &kp W         &kp E          &kp R        &kp T                                 &kp Y      &kp U  &kp I      &kp O     &kp P      &kp BACKSPACE
-&kp TAB           &kp A         &kp S         &kp D          &kp F        &kp G         &none        &none      &kp H      &kp J  &kp K      &kp L     &kp SEMI   &kp SQT
-&kp LSHFT         &kp Z         &kp X         &kp C          &kp V        &kp B         &mkp MCLK    &mkp RCLK  &kp N      &kp M  &kp COMMA  &kp DOT   &kp SLASH  &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp PAGE_DOWN  &lt 1 PG_UP  &lt 2 DELETE  &lt 1 SPACE  &mkp LCLK  &kp ENTER  &none  &none      &kp HOME  &kp END    &kp RIGHT_CONTROL
+&none             &none         &none         &none     &none    &none                                 &none      &none  &none      &none                 &none                  &none
+&kp ESC           &kp Q         &kp W         &kp E     &kp R    &kp T                                 &kp Y      &kp U  &kp I      &kp O                 &kp P                  &kp BACKSPACE
+&kp TAB           &kp A         &kp S         &kp D     &kp F    &kp G         &none        &none      &kp H      &kp J  &kp K      &kp L                 &kp SEMI               &kp SQT
+&kp LSHFT         &kp Z         &kp X         &kp C     &kp V    &kp B         &mkp MCLK    &mkp RCLK  &kp N      &kp M  &kp COMMA  &kp DOT               &kp SLASH              &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp HOME  &kp END  &lt 2 DELETE  &lt 1 SPACE  &mkp LCLK  &kp ENTER  &none  &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_CONTROL
             >;
         };
 
         layer_1 {
             bindings = <
-&none   &none   &none   &none           &none           &none                            &none           &none           &none            &none   &none   &none
-&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans                           &mkp LCLK       &msc SCRL_UP    &mkp RCLK        &trans  &trans  &trans
-&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans          &none           &none            &trans  &trans  &trans
-            >;
-        };
-
-        layer_2 {
-            bindings = <
-&none   &none   &none   &none         &none         &none                         &none             &none              &none                 &none   &none   &none
-&trans  &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                  &kp MINUS         &kp EQUAL          &kp PIPE              &trans  &trans  &trans
-&trans  &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none   &none   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &trans  &trans  &trans
-&trans  &trans  &trans  &kp N7        &kp N8        &kp N9        &trans  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp ASTERISK          &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &kp NUMBER_0  &trans        &trans  &trans  &trans            &none              &none                 &trans  &trans  &trans
+&none   &none   &none   &none           &none           &none                                          &none            &none         &none         &none         &none         &none
+&trans  &trans  &trans  &trans          &kp UP_ARROW    &trans                                         &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none                 &kp DOLLAR       &kp PERCENT   &kp CARET     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&trans  &trans  &trans  &trans          &trans          &trans           &trans  &kp NON_US_BACKSLASH  &kp AMPERSAND    &kp ASTERISK  &kp QUESTION  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&trans  &trans  &trans  &trans          &trans          &trans           &trans  &kp MINUS             &kp EQUAL        &none         &none         &trans        &kp NUMBER_0  &trans
             >;
         };
 
