@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -17,11 +18,31 @@
 
         layer_0 {
             bindings = <
-&none             &none         &none           &none  &none  &none                        &none  &none  &none      &none    &none      &none
-&kp ESC           &kp Q         &kp W           &kp E  &kp R  &kp T                        &kp Y  &kp U  &kp I      &kp O    &kp P      &kp DELETE
-&kp TAB           &kp A         &kp S           &kp D  &kp F  &kp G  &none  &none          &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT         &kp Z         &kp X           &kp C  &kp V  &kp B  &none  &kp BACKSPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
-&kp LEFT_CONTROL  &kp LEFT_WIN  &lt 0 LEFT_ALT  &none  &none  &none  &none  &kp ENTER      &none  &none  &none      &none    &none      &none
+&none             &none         &none  &none  &none  &none                                 &none      &none  &none      &none    &none      &none
+&kp ESC           &kp Q         &kp W  &kp E  &kp R  &kp T                                 &kp Y      &kp U  &kp I      &kp O    &kp P      &kp BACKSPACE
+&kp TAB           &kp A         &kp S  &kp D  &kp F  &kp G         &none        &none      &kp H      &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT         &kp Z         &kp X  &kp C  &kp V  &kp B         &lt 1 LCTRL  &mkp RCLK  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none
+&kp LEFT_CONTROL  &kp LEFT_WIN  &none  &none  &none  &lt 0 DELETE  &lt 2 SPACE  &mkp LCLK  &kp ENTER  &none  &none      &none    &none      &none
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
