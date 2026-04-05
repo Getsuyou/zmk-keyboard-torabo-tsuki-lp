@@ -32,7 +32,7 @@
 &trans  &trans  &trans  &trans          &kp UP_ARROW    &trans                           &mkp LCLK       &msc SCRL_UP    &mkp RCLK        &trans  &trans  &trans
 &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans  &trans
 &trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans          &none           &none            &trans  &trans  &trans
             >;
         };
 
@@ -48,7 +48,7 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&none   &none   &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
