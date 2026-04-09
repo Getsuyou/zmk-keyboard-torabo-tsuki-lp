@@ -19,11 +19,11 @@
 
         layer_0 {
             bindings = <
-&none             &none         &none         &none      &none      &none                                 &none          &none  &none      &none                 &none                  &none
-&kp ESC           &kp Q         &kp W         &kp E      &kp R      &kp T                                 &kp Y          &kp U  &kp I      &kp O                 &kp P                  &kp BACKSPACE
-&kp TAB           &kp A         &kp S         &kp D      &kp F      &kp G         &none        &none      &kp H          &kp J  &kp K      &kp L                 &kp SEMI               &kp SQT
-&kp LSHFT         &kp Z         &kp X         &kp C      &kp V      &kp B         &mkp MCLK    &kp MINUS  &kp N          &kp M  &kp COMMA  &kp DOT               &kp SLASH              &kp NON_US_BACKSLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &lt 2 DELETE  &lt 1 SPACE  &kp ENTER  &kp BACKSPACE  &none  &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &lt 3 RCTRL
+&none             &none         &none         &none      &none      &none                                 &none          &none  &none      &none    &none      &none
+&kp ESC           &kp Q         &kp W         &kp E      &kp R      &kp T                                 &kp Y          &kp U  &kp I      &kp O    &kp P      &kp BACKSPACE
+&kp TAB           &kp A         &kp S         &kp D      &kp F      &kp G         &none        &none      &kp H          &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT         &kp Z         &kp X         &kp C      &kp V      &kp B         &mkp MCLK    &kp MINUS  &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp NON_US_BACKSLASH
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &lt 2 DELETE  &lt 1 SPACE  &kp ENTER  &kp BACKSPACE  &none  &none      &none    &kp HOME   &lt 3 END
             >;
         };
 
