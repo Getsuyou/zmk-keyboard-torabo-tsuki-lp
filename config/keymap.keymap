@@ -4,8 +4,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&vtrackball {
-    input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 3 1>;
+&trackball {
+    input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 5 1>;
 };
 
 / {
