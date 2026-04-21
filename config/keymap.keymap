@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&trackball {
+&pd0 {
     input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 5 1>;
 };
 
@@ -64,16 +64,11 @@
 };
 
 / {
-    /* Layer 2の時だけボールの動きをスクロール（高速）に変える設定 */
-    scroll_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>; // スニペットで定義されている名前
-        layers = <2>;          // DELETEキーで切り替わるレイヤー番号
-
-        input-processors = 
-            /* 1. ボールのXY移動をスクロール信号に変換 */
-            <&zip_xy_to_scroll_mapper>, 
-            /* 2. スクロール量を5倍に増幅 (遅ければ 8 1 などに増やしてください) */
-            <&zip_scroll_scaler 5 1>; 
+    /* 既存の pointing_listener を上書きして有効化する */
+    &pointing_listener {
+        status = "okay";
+        device = <&pd0>; // ここを &trackball に変えてもダメなら &pd0
+        layers = <2>;
+        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 5 1>;
     };
 };
