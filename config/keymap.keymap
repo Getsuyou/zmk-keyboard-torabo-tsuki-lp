@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&pd0 {
+&trackpad {
     input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 5 1>;
 };
 
@@ -60,15 +60,5 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &none         &none         &trans      &trans  &trans
             >;
         };
-    };
-};
-
-/ {
-    /* 既存の pointing_listener を上書きして有効化する */
-    &pointing_listener {
-        status = "okay";
-        device = <&pd0>; // ここを &trackball に変えてもダメなら &pd0
-        layers = <2>;
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 5 1>;
     };
 };
