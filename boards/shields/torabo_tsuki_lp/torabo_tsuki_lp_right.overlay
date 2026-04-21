@@ -6,6 +6,23 @@
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
 };
 
+/ {
+    /* Layer 2 (DELETEキー押し) の時だけ動作するスクロール専用リスナー */
+    scroll_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        layers = <2>; // Layer 2のときだけ有効
+
+        input-processors = 
+            /* 反転設定をスクロールにも適用（これを入れないと方向が逆になります） */
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+            /* XY移動をスクロールに変換 */
+            <&zip_xy_to_scroll_mapper>, 
+            /* スクロール量を5倍に増やす（遅ければ 10 1 に変更してください） */
+            <&zip_scroll_scaler 5 1>;
+    };
+};
+
 &size_s_transform {
     col-offset = <7>;
 };
