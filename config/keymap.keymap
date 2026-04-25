@@ -58,8 +58,3 @@
         };
     };
 };
-
-&pointing_device {
-    // layer_2に切り替えている間、トラックボールをスクロールモードにする
-    input-processors = <&zip_scroll_transform 2>;
-};
