@@ -2,8 +2,14 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
+// ① リスナー側は「カーソルの反転」だけに戻す
 &pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>, <&zip_scroll_transform 2>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+};
+
+// ② 新しく「センサー本体（pointing_device）」に対してスクロール設定を追記する
+&pointing_device {
+    input-processors = <&zip_scroll_transform 2>;
 };
 
 &size_s_transform {
