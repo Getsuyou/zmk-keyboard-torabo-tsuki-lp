@@ -1,5 +1,3 @@
-#include <input/processors.dtsi>
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
