@@ -3,14 +3,10 @@
 #include <dt-bindings/zmk/input_transform.h>
 
 &pointing_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-
-    // レイヤー2が押された時だけ発動する「上書きルール」
-    scroll_layer {
+input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+    scroll {
         layers = <2>;
-        input-processors = 
-            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_scroll_transform>;
+        input-processors = <&zip_scroll_transform>;
     };
 };
 
