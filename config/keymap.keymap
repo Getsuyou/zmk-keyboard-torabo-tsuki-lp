@@ -4,6 +4,11 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&msc {
+    delay-ms = <0>;                // 押し始めてからスクロールが始まるまでの遅延をゼロにする
+    time-to-max-speed-ms = <100>;  // 長押しした時に、一瞬（0.1秒）でトップスピードに到達させる
+};
+
 / {
     combos {
         compatible = "zmk,combos";
